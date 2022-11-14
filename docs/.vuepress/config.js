@@ -37,6 +37,7 @@ module.exports = {
           { text: 'Nest', link: '/pages/node/nest/nest.md' },
         ]
       },
+      { text: 'CodeReview', link: '/pages/codeReview/outbound.md' }
     ],
 
     //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
@@ -100,11 +101,11 @@ module.exports = {
       ],
       '/pages/flutter/': [
         {
-          title: 'Dart',   // 一级菜单名称
-          collapsable: false, // false为默认展开菜单, 默认值true是折叠,
-          sidebarDepth: 1,    //  设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
+          title: 'Dart',
+          collapsable: false,
+          sidebarDepth: 1,
           children: [
-            ['dart-grammar.md', 'Dart'],  //菜单名称为'子菜单1'，跳转至/pages/folder1/test1.md
+            ['dart-grammar.md', 'Dart'],
           ]
         },
         {
@@ -135,6 +136,16 @@ module.exports = {
           ]
         },
       ],
+      '/pages/codeReview/': [
+        {
+          title: 'CodeReview',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ['outbound.md', '出库']
+          ]
+        },
+      ]
     },
   }
 }
