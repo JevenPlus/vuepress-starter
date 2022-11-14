@@ -37,7 +37,8 @@ module.exports = {
           { text: 'Nest', link: '/pages/node/nest/nest.md' },
         ]
       },
-      { text: 'CodeReview', link: '/pages/codeReview/outbound.md' }
+      { text: 'CodeReview', link: '/pages/codeReview/outbound.md' },
+      { text: 'Bug', link: '/pages/Bug/vueBug.md' },
     ],
 
     //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
@@ -143,6 +144,16 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             ['outbound.md', '出库']
+          ]
+        },
+      ],
+      '/pages/Bug/': [
+        {
+          title: 'Bug',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ['vueBug.md', 'Vue']
           ]
         },
       ]
