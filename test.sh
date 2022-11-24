@@ -3,12 +3,6 @@ set -e
 
 echo "脚本执行"
 
-# 提交代码
-git init
-git add -A
-git commit -m 'deploy'
-git push origin https://github.com/JevenPlus/vuepress-starter.git
-
 # 生成静态文件
 npm run build:docs
 
