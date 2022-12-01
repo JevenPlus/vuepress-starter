@@ -143,7 +143,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            ['outbound.md', '出库']
+            ['outbound.md', '出库'],
+            ['basicsetBlackAndWhite.md', '黑白名单']
           ]
         },
       ],
