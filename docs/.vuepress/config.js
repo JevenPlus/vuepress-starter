@@ -143,8 +143,9 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            ['outbound.md', '出库'],
-            ['basicsetBlackAndWhite.md', '黑白名单']
+            ['picking.md', '2022-11-10-肖柢'],
+            ['basicsetBlackAndWhite.md', '2022-11-24-郑恺力'],
+            ['receipt.md', '2022-12-01-刘宁刚'],
           ]
         },
       ],
