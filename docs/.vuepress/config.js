@@ -37,7 +37,7 @@ module.exports = {
           { text: 'Nest', link: '/pages/node/nest/nest.md' },
         ]
       },
-      { text: 'CodeReview', link: '/pages/codeReview/outbound.md' },
+      { text: 'CodeReview', link: '/pages/codeReview/picking.md' },
       { text: 'Bug', link: '/pages/Bug/vueBug.md' },
     ],
 

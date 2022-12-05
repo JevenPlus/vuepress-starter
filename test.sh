@@ -4,7 +4,7 @@ echo "脚本执行"
 
 git add .
 git commit -m '更新知识库'
-# git push -f https://github.com/JevenPlus/vuepress-starter.git
+git push -f https://github.com/JevenPlus/vuepress-starter.git
 git push -f http://192.168.20.17:8089/ninggangliu/wyd-frontend-wiki.git
 
 # 生成静态文件
