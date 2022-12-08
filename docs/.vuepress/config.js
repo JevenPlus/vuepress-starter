@@ -147,6 +147,16 @@ module.exports = {
           ]
         },
       ],
+      '/pages/project/': [
+        {
+          title: 'WMS',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ['wms.md', 'WMS']
+          ]
+        },
+      ],
       '/pages/standard/': [
         {
           title: 'Git',
