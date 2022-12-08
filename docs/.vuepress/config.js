@@ -13,30 +13,40 @@ module.exports = {
     logo: '/img/blob.png',  //网页顶端导航栏左上角的图标
     //顶部导航栏
     nav: [
-      { text: 'HTML+CSS', link: '/pages/html/html.md' },
-      //格式一：直接跳转，'/'为不添加路由，跳转至首页
       {
-        text: 'JavaScript',  //默认显示
-        ariaLabel: 'JavaScript',   //用于识别的label
+        text: '前端三剑客',
+        ariaLabel: 'basic',
         items: [
+          { text: 'HTML+Css', link: '/pages/html/html.md' },
           { text: 'JavaScript', link: '/pages/JavaScript/basic.md' },
-          //点击标签会跳转至link的markdown文件生成的页面
           { text: 'TypeScript', link: '/pages/TypeScript/BasicType.md' },
         ]
       },
-      { text: 'Vue', link: '/pages/vue/Vue.md' },
-      { text: 'React', link: '/pages/react/React.md' },
-      { text: 'Flutter', link: '/pages/flutter/dart-grammar.md' },
-      //格式二：添加下拉菜单，link指向的文件路径
       {
-        text: 'Node',  //默认显示
-        ariaLabel: 'Node',   //用于识别的label
+        text: '框架',
+        ariaLabel: 'frame',
+        items: [
+          { text: 'Vue', link: '/pages/vue/Vue.md' },
+          { text: 'React', link: '/pages/react/React.md' },
+          { text: 'Flutter', link: '/pages/flutter/dart-grammar.md' },
+        ]
+      },
+      {
+        text: 'Node',
+        ariaLabel: 'Node',
         items: [
           { text: 'Express', link: '/pages/node/express/express.md' },
-          //点击标签会跳转至link的markdown文件生成的页面
           { text: 'Nest', link: '/pages/node/nest/nest.md' },
         ]
       },
+      {
+        text: '项目',
+        ariaLabel: 'project',
+        items: [
+          { text: 'WMS', link: '/pages/project/wms.md' },
+        ]
+      },
+      { text: '规范', link: '/pages/standard/git.md' },
       { text: 'CodeReview', link: '/pages/codeReview/picking.md' },
       { text: 'Bug', link: '/pages/Bug/vueBug.md' },
     ],
@@ -136,6 +146,17 @@ module.exports = {
             ['nest.md', 'Nest']
           ]
         },
+      ],
+      '/pages/standard/': [
+        {
+          title: 'Git',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ['git.md', 'Git'],
+            ['eslint.md', 'ESlint'],
+          ]
+        }
       ],
       '/pages/codeReview/': [
         {
