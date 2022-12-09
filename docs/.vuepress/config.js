@@ -26,7 +26,7 @@ module.exports = {
         text: '框架',
         ariaLabel: 'frame',
         items: [
-          { text: 'Vue', link: '/pages/vue/Vue.md' },
+          { text: 'Vue', link: '/pages/vue/columnMerge.md' },
           { text: 'React', link: '/pages/react/React.md' },
           { text: 'Flutter', link: '/pages/flutter/dart-grammar.md' },
         ]
@@ -96,7 +96,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            ['Vue.md', 'Vue']
+            ['columnMerge.md', 'el-table表格合并'],
           ]
         },
       ],
@@ -177,6 +177,7 @@ module.exports = {
             ['picking.md', '2022-11-10-肖柢'],
             ['basicsetBlackAndWhite.md', '2022-11-24-郑恺力'],
             ['receipt.md', '2022-12-01-刘宁刚'],
+            ['adjustment.md', '2022-12-08-朱雪萍']
           ]
         },
       ],
