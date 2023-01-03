@@ -1,4 +1,5 @@
-### Git commit规范
+### Git规范
+#### Git commit规范
  - **feat**： 一个新特性
  - **fix**： 修复bug
  - **docs**： 文档修改
