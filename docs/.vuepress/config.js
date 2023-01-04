@@ -43,6 +43,10 @@ module.exports = {
         text: "项目",
         ariaLabel: "project",
         items: [
+          {
+            text: "开发管理系统",
+            link: "/pages/project/developManage/development.md",
+          },
           { text: "WMS", link: "/pages/project/wms/wms.md" },
           { text: "PDA", link: "/pages/project/pda/inbound.md" },
         ],
@@ -128,6 +132,14 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [["nest.md", "Nest"]],
+        },
+      ],
+      "/pages/project/developManage/": [
+        {
+          title: "开发管理系统",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [["development.md", "开发管理系统"]],
         },
       ],
       "/pages/project/wms/": [
