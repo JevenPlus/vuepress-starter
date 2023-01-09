@@ -43,16 +43,14 @@ module.exports = {
         text: "项目",
         ariaLabel: "project",
         items: [
-          {
-            text: "开发管理系统",
-            link: "/pages/project/developManage/development.md",
-          },
+          { text: "公司系统", link: "/pages/project/auth/jurisdiction.md" },
           { text: "WMS", link: "/pages/project/wms/wms.md" },
           { text: "PDA", link: "/pages/project/pda/inbound.md" },
         ],
       },
       { text: "规范", link: "/pages/standard/git.md" },
       { text: "CodeReview", link: "/pages/codeReview/picking.md" },
+      { text: "新人须知", link: "/pages/newcomers/newcomers.md" },
       { text: "Bug", link: "/pages/Bug/vueBug.md" },
     ],
 
@@ -139,7 +137,18 @@ module.exports = {
           title: "开发管理系统",
           collapsable: false,
           sidebarDepth: 1,
-          children: [["development.md", "开发管理系统"]],
+          children: [],
+        },
+      ],
+      "/pages/project/auth/": [
+        {
+          title: "公司系统",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ["jurisdiction.md", "权限管理系统"],
+            ["development.md", "开发管理系统"],
+          ],
         },
       ],
       "/pages/project/wms/": [
@@ -170,8 +179,9 @@ module.exports = {
           children: [
             ["git.md", "Git"],
             ["eslint.md", "ESlint"],
-            ["branch.md", "分支管理"],
             ["process.md", "开发流程"],
+            ["branch.md", "分支管理"],
+            ["edition.md", "版本管理"],
           ],
         },
       ],
@@ -186,6 +196,14 @@ module.exports = {
             ["receipt.md", "2022-12-01-刘宁刚"],
             ["adjustment.md", "2022-12-08-朱雪萍"],
           ],
+        },
+      ],
+      "/pages/newcomers/": [
+        {
+          title: "新人须知",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [["newcomers.md", "新人须知"]],
         },
       ],
       "/pages/Bug/": [
