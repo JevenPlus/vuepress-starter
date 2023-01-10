@@ -45,7 +45,7 @@ module.exports = {
         items: [
           { text: "公司系统", link: "/pages/project/auth/jurisdiction.md" },
           { text: "WMS", link: "/pages/project/wms/wms.md" },
-          { text: "PDA", link: "/pages/project/pda/inbound.md" },
+          { text: "PDA", link: "/pages/project/pda/abnormal.md" },
         ],
       },
       { text: "规范", link: "/pages/standard/git.md" },
@@ -165,7 +165,11 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            ["inbound.md", "入库"],
+            ["abnormal.md", "上架异常与收货异常"],
+            ["putaway.md", "入库-上架"],
+            ["return.md", "退件单"],
+            ["inventory.md", "盘点单"],
+            ["shiftSheet.md", "移位单"],
             ["issue.md", "出库"],
             ["warehouse.md", "库内"],
           ],
