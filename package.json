@@ -13,5 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "bash": "0.0.1",
+    "update-notifier": "^6.0.2"
   }
 }
