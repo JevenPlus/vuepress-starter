@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc06466a-a89c-4f76-b68b-153c3fa3e6ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/pages/codeReview/basicsetBlackAndWhite.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662003152893</updated>
       <workItem from="1662003154495" duration="256000" />
-      <workItem from="1669875631722" duration="1539000" />
+      <workItem from="1669875631722" duration="2397000" />
     </task>
     <servers />
   </component>
