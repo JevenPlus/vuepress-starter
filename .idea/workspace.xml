@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc06466a-a89c-4f76-b68b-153c3fa3e6ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/pages/project/pda/abnormal.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pages/project/pda/inventory.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pages/project/pda/putaway.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pages/project/pda/return.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pages/project/pda/shiftSheet.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/image/addReturn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/image/bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/image/handleReturn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/image/shiftsheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pages/project/pda/inbound.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/flutter/flutter-components.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/flutter/flutter-components.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/project/pda/abnormal.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/project/pda/abnormal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/project/pda/inventory.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/project/pda/inventory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/project/pda/putaway.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/project/pda/putaway.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/project/pda/return.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/project/pda/return.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pages/project/pda/shiftSheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/project/pda/shiftSheet.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +36,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/assets/image" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\GZXG\wyd-frontend-wiki\node_modules\prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GZXG\wyd\wyd-frontend-wiki\docs\assets\image" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -56,7 +66,8 @@
       <workItem from="1673323472683" duration="1383000" />
       <workItem from="1673330007981" duration="446000" />
       <workItem from="1673330483409" duration="2002000" />
-      <workItem from="1673332641829" duration="3257000" />
+      <workItem from="1673332641829" duration="5073000" />
+      <workItem from="1673338323955" duration="1652000" />
     </task>
     <servers />
   </component>

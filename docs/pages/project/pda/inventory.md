@@ -3,6 +3,9 @@
 #### 开发时间
   2022-10-14
   
+### 需求理解
+方便仓库人员使用手持pda进行盘点
+
   ### 盘点
    设计稿链接:  <br> [https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1](https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1)
    

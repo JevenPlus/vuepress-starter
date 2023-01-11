@@ -3,6 +3,9 @@
 #### 开发时间
   2022-10-24
   
+### 需求理解
+仓库人员使用手持pda进行上架动作 , 发现异常则进行上报
+  
 ### 上架
 设计稿链接:  <br> [https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1](https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1)
 <br>接口文档地址: [http://192.168.20.24:8881/api/pda/doc.html#/default_api/%E5%BC%82%E5%B8%B8%E5%8D%95%E6%8E%A7%E5%88%B6%E5%B1%82/addWarehouseExceptionInboundUsingPOST](http://192.168.20.24:8881/api/pda/doc.html#/default_api/%E5%BC%82%E5%B8%B8%E5%8D%95%E6%8E%A7%E5%88%B6%E5%B1%82/addWarehouseExceptionInboundUsingPOST)

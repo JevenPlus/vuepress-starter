@@ -3,6 +3,9 @@
   郑凯力
 #### 开发时间
   2022-12-26
+  
+### 需求理解
+仓库在收货或者上架过程中发现异常, 进行上报
 
 ### 上架异常与收货异常
 设计稿链接:  <br> [https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1](https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1)

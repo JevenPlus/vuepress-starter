@@ -2,12 +2,23 @@
   郑凯力
 #### 开发时间
   2022-10-24
-  
+
+### 需求理解
+仓库人员使用手持pda进行退件动作, 操作相对pc来说较为简单
+
+
   ### 退件
  设计稿链接(新增退件):  <br> [https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1](https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1)
  
   设计稿链接(处理退件):  <br> [https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1](https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1)
  <br>接口文档地址: [http://192.168.20.24:8881/api/pda/doc.html#/default_api/%E9%80%80%E4%BB%B6%E8%AE%A2%E5%8D%95%E6%8E%A7%E5%88%B6%E5%B1%82/checkSkuIsExistsUsingGET_1](http://192.168.20.24:8881/api/pda/doc.html#/default_api/%E9%80%80%E4%BB%B6%E8%AE%A2%E5%8D%95%E6%8E%A7%E5%88%B6%E5%B1%82/checkSkuIsExistsUsingGET_1) 
+ 
+ ### 新增退件
+  ![](../../../assets/image/addReturn.png)
+  
+ ### 处理退件
+  ![](../../../assets/image/handleReturn.png)
+ 
  
  ### 其中页面分为新增退件, 处理退件两个模块
  

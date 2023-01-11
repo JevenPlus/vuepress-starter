@@ -113,7 +113,9 @@ module.exports = {
         {
           title: "Flutter",
           collapsable: false,
-          children: [["flutter-components.md", "Flutter"]],
+          children: [
+            ["flutter-components.md", "Flutter"]
+          ],
         },
       ],
       "/pages/node/express/": [
@@ -121,7 +123,9 @@ module.exports = {
           title: "Express",
           collapsable: false,
           sidebarDepth: 1,
-          children: [["express.md", "入门&上手"]],
+          children: [
+            ["express.md", "入门&上手"],
+          ],
         },
       ],
       "/pages/node/nest/": [

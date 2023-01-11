@@ -2,12 +2,17 @@
   郑凯力
 #### 开发时间
   2022-10-14
-  
+
+### 需求理解
+仓库人员使用手持pda进行移位动作, 操作较为方便
   
   ### 移位
    设计稿链接:  <br> [https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1](https://pixso.cn/app/editor/Bt9nFlaohu549BxHoGZq7A?icon_type=1)
    
    <br>接口文档地址: [http://192.168.20.24:8881/api/pda/doc.html#/default_api/%E7%A7%BB%E4%BD%8D%E5%8D%95%E6%8E%A7%E5%88%B6%E5%B1%82/addShiftOrderDetailByPalletUsingPOST](http://192.168.20.24:8881/api/pda/doc.html#/default_api/%E7%A7%BB%E4%BD%8D%E5%8D%95%E6%8E%A7%E5%88%B6%E5%B1%82/addShiftOrderDetailByPalletUsingPOST) 
+ 
+ ![](../../../assets/image/shiftsheet.png)
+ 
    
 ### 其中页面分为新增移位, 移位处理, 我的移位单, 异常移位单四个部分
     
