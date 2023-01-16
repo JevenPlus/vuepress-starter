@@ -5,6 +5,7 @@
  |develop|开发测试环境分支|
  |work|阿里测试测试环境分支|
  |updateWork|修复work bug分支|
+ |work_temp| 用于work分支的revert和cheerpick|
  |release|海外仓测试环境分支|
  |updateRelease|修复release bug分支|
  |prod|海外仓正式环境分支|
