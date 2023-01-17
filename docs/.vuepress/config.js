@@ -200,10 +200,11 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             ["picking.md", "2022-11-10-肖柢"],
-            ["basicsetBlackAndWhite.md", "2022-11-24-郑恺力"],
+            ["basicsetBlackAndWhite.md", "2022-11-24-郑凯力"],
             ["receipt.md", "2022-12-01-刘宁刚"],
             ["adjustment.md", "2022-12-08-朱雪萍"],
-            ["inventory.md", "2023-01-05-朱雪萍"]
+            ["inventory.md", "2023-01-05-朱雪萍"],
+            ["pda_abnormalGoods.md", "2023-01-12-郑凯力"]
           ],
         },
       ],

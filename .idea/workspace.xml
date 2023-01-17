@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc06466a-a89c-4f76-b68b-153c3fa3e6ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/pages/codeReview/pda_abnormalGoods.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pages/standard/branch.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/standard/branch.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,8 @@
       <workItem from="1673338323955" duration="1652000" />
       <workItem from="1673408094286" duration="591000" />
       <workItem from="1673573705801" duration="601000" />
+      <workItem from="1673857511699" duration="877000" />
+      <workItem from="1673917342344" duration="2433000" />
     </task>
     <servers />
   </component>
