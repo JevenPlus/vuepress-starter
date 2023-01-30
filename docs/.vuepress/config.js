@@ -46,6 +46,7 @@ module.exports = {
           { text: "公司系统", link: "/pages/project/auth/jurisdiction.md" },
           { text: "WMS", link: "/pages/project/wms/wms.md" },
           { text: "PDA", link: "/pages/project/pda/abnormal.md" },
+          { text: "CRM", link: "/pages/project/crm/framework.md" },
         ],
       },
       { text: "规范", link: "/pages/standard/git.md" },
@@ -173,6 +174,14 @@ module.exports = {
             ["issue.md", "出库"],
             ["warehouse.md", "库内"],
           ],
+        },
+      ],
+      "/pages/project/crm/": [
+        {
+          title: "PDA",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [["framework.md", "项目架构"]],
         },
       ],
       "/pages/standard/": [
