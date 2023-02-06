@@ -89,127 +89,127 @@
 
 ```js
 // 获取步骤信息
-    getStepList() {
-      /**
-       * 0: 待提交, 1: 待审核, 2: 审核通过, 3: 审核驳回, 4: 初盘完成, 5: 复盘中, 6: 复盘完成, 7: 完成
-       */
-      const { documentStatus, checkFinishTime } = this.submitform || {};
-      const ns =
-        documentStatus === 0 || documentStatus ? Number(documentStatus) : "";
-      const getVal = (key) => this.$t(`page_InventoryManage.${key}`);
-      // 各阶段对应的文案
-      const strObj = {
-        // 待提交
-        0: getVal("dictionary1_string1"),
-        // 待审核
-        1: getVal("dictionary1_string2"),
-        // 待盘点（审核通过）
-        2: getVal("dictionary1_string12"),
-        // 初盘中(审核通过)
-        // 2: getVal("dictionary1_string9"),
-        // 审核驳回
-        3: getVal("dictionary1_string4"),
-        // 初盘完成
-        4: getVal("dictionary1_string5"),
-        // 复盘中
-        5: getVal("dictionary1_string6"),
-        // 复盘完成
-        6: getVal("dictionary1_string7"),
-        // 完成
-        7: getVal("dictionary1_string8"),
-        // 盘点中
-        8: getVal("dictionary1_string10"),
-        // 待复盘
-        9: getVal("dictionary1_string11"),
-      };
-      // 显示完成状态的阶段
-      const statusObj = {
-        4: "success",
-        6: "success",
-      };
-      // 各阶段对应的文案
-      const arr = [
-        {
-          name: ([0].includes(ns) && strObj[ns]) || getVal("tab_Submit"),
-          active: [0].includes(ns),
-        },
-        {
-          name: ([1, 3].includes(ns) && strObj[ns]) || getVal("Approved"),
-          active: [1, 3].includes(ns),
-        },
-        {
-          name:
-            ([4, 5, 6, 2, 8, 9].includes(ns) && strObj[ns]) ||
-            getVal("dictionary1_Inventory"),
-          active: [4, 5, 6, 2, 8, 9].includes(ns),
-        },
-        {
-          name:
-            ([7].includes(ns) && strObj[ns]) || getVal("dictionary1_string8"),
-          active: false,
-          description:
-            ([7].includes(ns) &&
-              `${getVal("toolLabel")}：${checkFinishTime}`) ||
-            "",
-        },
-      ];
-      // 当前所在阶段
-      let active = 0;
-      let hasActie = false;
-      const steps = [];
-      arr.forEach((obj, index) => {
-        const sObj = {
-          name: obj.name,
-          description: obj.description,
-        };
-        if (obj.active) {
-          active = index;
-          hasActie = true;
-          sObj.status = statusObj[ns] || "warning";
-        } else if (!hasActie && index === arr.length - 1) {
-          active = index + 1;
-        }
-        steps.push(sObj);
-      });
-
-      return {
-        active,
-        steps,
-      };
+getStepList() {
+  /**
+   * 0: 待提交, 1: 待审核, 2: 审核通过, 3: 审核驳回, 4: 初盘完成, 5: 复盘中, 6: 复盘完成, 7: 完成
+   */
+  const { documentStatus, checkFinishTime } = this.submitform || {};
+  const ns =
+    documentStatus === 0 || documentStatus ? Number(documentStatus) : "";
+  const getVal = (key) => this.$t(`page_InventoryManage.${key}`);
+  // 各阶段对应的文案
+  const strObj = {
+    // 待提交
+    0: getVal("dictionary1_string1"),
+    // 待审核
+    1: getVal("dictionary1_string2"),
+    // 待盘点（审核通过）
+    2: getVal("dictionary1_string12"),
+    // 初盘中(审核通过)
+    // 2: getVal("dictionary1_string9"),
+    // 审核驳回
+    3: getVal("dictionary1_string4"),
+    // 初盘完成
+    4: getVal("dictionary1_string5"),
+    // 复盘中
+    5: getVal("dictionary1_string6"),
+    // 复盘完成
+    6: getVal("dictionary1_string7"),
+    // 完成
+    7: getVal("dictionary1_string8"),
+    // 盘点中
+    8: getVal("dictionary1_string10"),
+    // 待复盘
+    9: getVal("dictionary1_string11"),
+  };
+  // 显示完成状态的阶段
+  const statusObj = {
+    4: "success",
+    6: "success",
+  };
+  // 各阶段对应的文案
+  const arr = [
+    {
+      name: ([0].includes(ns) && strObj[ns]) || getVal("tab_Submit"),
+      active: [0].includes(ns),
     },
-
-    // 费用信息合计
-    getSummaries(param) {
-        // 只计算第二列和第三列的总额
-      const { columns, data } = param;
-      const sums = [];
-      columns.forEach((column, index) => {
-        if (index === 0) {
-          sums[index] = this.$t("common.costDetail_tableItem_summary");
-          return;
-        } else if ([3].includes(index)) {
-          sums[index] = data[0] ? data[0][column.property] : "";
-          return;
-        }
-        const values = data.map((item) => Number(item[column.property]));
-        if ([2].includes(index)) {
-          sums[index] = values
-            .reduce((prev, curr) => {
-              const value = Number(curr);
-              if (!isNaN(value)) {
-                return prev + curr;
-              } else {
-                return prev;
-              }
-            }, 0)
-            .toFixed(4);
-        } else {
-          sums[index] = "";
-        }
-      });
-      this.submitform.totalCost = sums[2] + sums[3];
-      return sums;
+    {
+      name: ([1, 3].includes(ns) && strObj[ns]) || getVal("Approved"),
+      active: [1, 3].includes(ns),
     },
+    {
+      name:
+        ([4, 5, 6, 2, 8, 9].includes(ns) && strObj[ns]) ||
+        getVal("dictionary1_Inventory"),
+      active: [4, 5, 6, 2, 8, 9].includes(ns),
+    },
+    {
+      name:
+        ([7].includes(ns) && strObj[ns]) || getVal("dictionary1_string8"),
+      active: false,
+      description:
+        ([7].includes(ns) &&
+          `${getVal("toolLabel")}：${checkFinishTime}`) ||
+        "",
+    },
+  ];
+  // 当前所在阶段
+  let active = 0;
+  let hasActie = false;
+  const steps = [];
+  arr.forEach((obj, index) => {
+    const sObj = {
+      name: obj.name,
+      description: obj.description,
+    };
+    if (obj.active) {
+      active = index;
+      hasActie = true;
+      sObj.status = statusObj[ns] || "warning";
+    } else if (!hasActie && index === arr.length - 1) {
+      active = index + 1;
+    }
+    steps.push(sObj);
+  });
+
+  return {
+    active,
+    steps,
+  };
+},
+
+// 费用信息合计
+getSummaries(param) {
+    // 只计算第二列和第三列的总额
+  const { columns, data } = param;
+  const sums = [];
+  columns.forEach((column, index) => {
+    if (index === 0) {
+      sums[index] = this.$t("common.costDetail_tableItem_summary");
+      return;
+    } else if ([3].includes(index)) {
+      sums[index] = data[0] ? data[0][column.property] : "";
+      return;
+    }
+    const values = data.map((item) => Number(item[column.property]));
+    if ([2].includes(index)) {
+      sums[index] = values
+        .reduce((prev, curr) => {
+          const value = Number(curr);
+          if (!isNaN(value)) {
+            return prev + curr;
+          } else {
+            return prev;
+          }
+        }, 0)
+        .toFixed(4);
+    } else {
+      sums[index] = "";
+    }
+  });
+  this.submitform.totalCost = sums[2] + sums[3];
+  return sums;
+},
 
 ```
 

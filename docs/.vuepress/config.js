@@ -46,6 +46,7 @@ module.exports = {
           { text: "公司系统", link: "/pages/project/auth/jurisdiction.md" },
           { text: "WMS", link: "/pages/project/wms/wms.md" },
           { text: "PDA", link: "/pages/project/pda/abnormal.md" },
+          { text: "CRM", link: "/pages/project/crm/framework.md" },
         ],
       },
       { text: "规范", link: "/pages/standard/git.md" },
@@ -113,9 +114,7 @@ module.exports = {
         {
           title: "Flutter",
           collapsable: false,
-          children: [
-            ["flutter-components.md", "Flutter"]
-          ],
+          children: [["flutter-components.md", "Flutter"]],
         },
       ],
       "/pages/node/express/": [
@@ -123,9 +122,7 @@ module.exports = {
           title: "Express",
           collapsable: false,
           sidebarDepth: 1,
-          children: [
-            ["express.md", "入门&上手"],
-          ],
+          children: [["express.md", "入门&上手"]],
         },
       ],
       "/pages/node/nest/": [
@@ -179,6 +176,14 @@ module.exports = {
           ],
         },
       ],
+      "/pages/project/crm/": [
+        {
+          title: "PDA",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [["framework.md", "项目架构"]],
+        },
+      ],
       "/pages/standard/": [
         {
           title: "规范",
@@ -203,8 +208,9 @@ module.exports = {
             ["basicsetBlackAndWhite.md", "2022-11-24-郑凯力"],
             ["receipt.md", "2022-12-01-刘宁刚"],
             ["adjustment.md", "2022-12-08-朱雪萍"],
+            ["distribution.md", "2022-12-15-肖柢"],
             ["inventory.md", "2023-01-05-朱雪萍"],
-            ["pda_abnormalGoods.md", "2023-01-12-郑凯力"]
+            ["pda_abnormalGoods.md", "2023-01-12-郑凯力"],
           ],
         },
       ],
