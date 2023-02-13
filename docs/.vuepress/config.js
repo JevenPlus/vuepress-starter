@@ -130,7 +130,10 @@ module.exports = {
           title: "Nest",
           collapsable: false,
           sidebarDepth: 1,
-          children: [["nest.md", "Nest"]],
+          children: [
+            ["nest.md", "Nest"],
+            ["loginRegisterExample.md", "简单登录注册示例"]
+          ],
         },
       ],
       "/pages/project/developManage/": [
@@ -157,7 +160,10 @@ module.exports = {
           title: "WMS",
           collapsable: false,
           sidebarDepth: 1,
-          children: [["wms.md", "WMS"]],
+          children: [
+            ["wms.md", "WMS"],
+            ["quotation.md", "报价单"],
+          ],
         },
       ],
       "/pages/project/pda/": [
@@ -211,6 +217,7 @@ module.exports = {
             ["distribution.md", "2022-12-15-肖柢"],
             ["inventory.md", "2023-01-05-朱雪萍"],
             ["pda_abnormalGoods.md", "2023-01-12-郑凯力"],
+            ["canvas.md", "2023-02-06-傅霓"],
           ],
         },
       ],
