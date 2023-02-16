@@ -218,6 +218,7 @@ module.exports = {
             ["inventory.md", "2023-01-05-朱雪萍"],
             ["pda_abnormalGoods.md", "2023-01-12-郑凯力"],
             ["canvas.md", "2023-02-06-傅霓"],
+            ["report.md", "2023-02-16-朱雪萍"],
           ],
         },
       ],
