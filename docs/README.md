@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/blob.png
-heroText: 无忧达前端技术园
+heroText: 无忧达前端
 tagline: 书以启智，技于谋生，活出精彩
 actionText: Get Start →
 actionLink: /pages/html/html.md
