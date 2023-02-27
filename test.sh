@@ -16,8 +16,8 @@ cd docs/.vuepress/dist
 # echo 'www.example.com' > CNAME
 
 git init
-git add -A
-git commit -m 'deploy'
+git add .
+git commit -m 'update'
 git push -f https://github.com/JevenPlus/vuepress-starter.git main:gh-pages
 
 cd -
