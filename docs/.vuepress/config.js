@@ -1,7 +1,8 @@
 module.exports = {
   title: "无忧达",
   description: "知识库",
-  base: "/vuepress-starter/",
+  // base: "/vuepress-starter/",
+  base: "./",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }], // 这个是标签页 logo
   ],
