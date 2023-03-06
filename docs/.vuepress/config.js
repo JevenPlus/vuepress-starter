@@ -1,17 +1,19 @@
 module.exports = {
   title: "无忧达",
   description: "知识库",
-  base: "/vuepress-starter/",
+  // base: "/vuepress-starter/",
+  base: "./",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }], // 这个是标签页 logo
   ],
   markdown: {
-    lineNumbers: true,
+    // 显示行号
+    lineNumbers: false,
   },
-  //下面涉及到的md文件和其他文件的路径下一步再详细解释
+  // theme: "vuepress-theme-onen",
   themeConfig: {
     logo: "/img/blob.png", //网页顶端导航栏左上角的图标
-    //顶部导航栏
+    // 顶部导航栏
     nav: [
       {
         text: "前端三剑客",
@@ -52,7 +54,7 @@ module.exports = {
       { text: "规范", link: "/pages/standard/git.md" },
       { text: "CodeReview", link: "/pages/codeReview/picking.md" },
       { text: "新人须知", link: "/pages/newcomers/newcomers.md" },
-      { text: "Bug", link: "/pages/Bug/vueBug.md" },
+      { text: "JavaScript编码规范", link: "/pages/codeing/structure.md" },
     ],
 
     //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
@@ -77,7 +79,11 @@ module.exports = {
           title: "JavaScript",
           collapsable: false,
           sidebarDepth: 1,
-          children: [["basic.md", "基础语法"]],
+          children: [
+            ["basic.md", "基础语法"],
+            ["skill.md", "技巧"],
+            ["performance.md", "性能"],
+          ],
         },
       ],
       "/pages/TypeScript/": [
@@ -93,7 +99,10 @@ module.exports = {
           title: "Vue",
           collapsable: false,
           sidebarDepth: 1,
-          children: [["columnMerge.md", "el-table表格合并"]],
+          children: [
+            ["basic.md", "Vue的理解"],
+            ["columnMerge.md", "el-table表格合并"],
+          ],
         },
       ],
       "/pages/react/": [
@@ -132,7 +141,7 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             ["nest.md", "Nest"],
-            ["loginRegisterExample.md", "简单登录注册示例"]
+            ["loginRegisterExample.md", "简单登录注册示例"],
           ],
         },
       ],
@@ -163,6 +172,7 @@ module.exports = {
           children: [
             ["wms.md", "WMS"],
             ["quotation.md", "报价单"],
+            ["bill.md", "账单"],
           ],
         },
       ],
@@ -230,14 +240,26 @@ module.exports = {
           children: [["newcomers.md", "新人须知"]],
         },
       ],
-      "/pages/Bug/": [
+      "/pages/codeing/": [
         {
-          title: "Bug",
+          title: "JavaScript编码规范",
           collapsable: false,
           sidebarDepth: 1,
-          children: [["vueBug.md", "Vue"]],
+          children: [
+            ["structure.md", "结构"],
+            ["name.md", "命名"],
+            ["notes.md", "注释"],
+          ],
         },
       ],
+      // "/pages/Bug/": [
+      //   {
+      //     title: "Bug",
+      //     collapsable: false,
+      //     sidebarDepth: 1,
+      //     children: [["vueBug.md", "Vue"]],
+      //   },
+      // ],
     },
   },
 };
