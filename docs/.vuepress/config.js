@@ -1,8 +1,8 @@
 module.exports = {
   title: "无忧达",
   description: "知识库",
-  // base: "/vuepress-starter/",
-  base: "./",
+  base: "/vuepress-starter/",
+  // base: "./",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }], // 这个是标签页 logo
   ],
@@ -189,6 +189,7 @@ module.exports = {
             ["shiftSheet.md", "移位单"],
             ["issue.md", "出库"],
             ["warehouse.md", "库内"],
+            ["second.md", "pda第二版"],
           ],
         },
       ],
