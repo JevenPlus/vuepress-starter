@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc06466a-a89c-4f76-b68b-153c3fa3e6ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/pages/codeReview/canvas.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pages/codeReview/report.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pages/node/nest/loginRegisterExample.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/update.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/image/addReturn.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/image/addReturn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/image/bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/image/bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/image/handleReturn.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/image/handleReturn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/image/shiftsheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/image/shiftsheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pages/JavaScript/basic.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/JavaScript/basic.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pages/node/nest/nest.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pages/node/nest/nest.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +28,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\GZXG\wyd-frontend-wiki\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -76,7 +64,9 @@
       <workItem from="1673917342344" duration="3034000" />
       <workItem from="1675650244331" duration="5148000" />
       <workItem from="1675905232687" duration="984000" />
-      <workItem from="1676600969984" duration="1338000" />
+      <workItem from="1676600969984" duration="1885000" />
+      <workItem from="1677730098510" duration="1405000" />
+      <workItem from="1678064477234" duration="597000" />
     </task>
     <servers />
   </component>
@@ -89,6 +79,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="350" y="96" key="SettingsEditor" timestamp="1677735427872">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="350" y="96" key="SettingsEditor/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1677735427872" />
     <state x="584" y="205" width="765" height="654" key="find.popup" timestamp="1673333757880">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
