@@ -230,6 +230,7 @@ module.exports = {
             ["pda_abnormalGoods.md", "2023-01-12-郑凯力"],
             ["canvas.md", "2023-02-06-傅霓"],
             ["report.md", "2023-02-16-朱雪萍"],
+            ["inboundPDA.md", "2023-03-09-郑凯力"],
           ],
         },
       ],
