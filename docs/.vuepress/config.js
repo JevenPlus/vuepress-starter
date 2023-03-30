@@ -49,6 +49,7 @@ module.exports = {
           { text: "WMS", link: "/pages/project/wms/wms.md" },
           { text: "PDA", link: "/pages/project/pda/abnormal.md" },
           { text: "CRM", link: "/pages/project/crm/framework.md" },
+          { text: "供应商考核", link: "/pages/project/supplier/supplier.md" },
         ],
       },
       { text: "规范", link: "/pages/standard/git.md" },
@@ -191,6 +192,14 @@ module.exports = {
             ["warehouse.md", "库内"],
             ["second.md", "pda第二版"],
           ],
+        },
+      ],
+      "/pages/project/supplier/": [
+        {
+          title: "海运KPI",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [["supplier.md", "海运KPI"]],
         },
       ],
       "/pages/project/crm/": [
