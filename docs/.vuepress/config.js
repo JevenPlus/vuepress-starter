@@ -12,6 +12,7 @@ module.exports = {
   },
   // theme: "vuepress-theme-onen",
   themeConfig: {
+    lastUpdated: "上次更新",
     logo: "/img/blob.png", //网页顶端导航栏左上角的图标
     // 顶部导航栏
     nav: [
