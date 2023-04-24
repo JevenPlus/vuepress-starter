@@ -241,6 +241,7 @@ module.exports = {
             ["canvas.md", "2023-02-06-傅霓"],
             ["report.md", "2023-02-16-朱雪萍"],
             ["inboundPDA.md", "2023-03-09-郑凯力"],
+            ["mergeTable.md", "2023-03-23-缪靖森"],
             ["pdaPallet.md", "2023-04-14-朱雪萍"],
           ],
         },
