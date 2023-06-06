@@ -12,7 +12,7 @@ module.exports = {
   },
   // theme: "vuepress-theme-onen",
   themeConfig: {
-    lastUpdated: "上次更新",
+    lastUpdated: "last updated",
     logo: "/img/blob.png", //网页顶端导航栏左上角的图标
     // 顶部导航栏
     nav: [
@@ -73,7 +73,12 @@ module.exports = {
         {
           title: "Css",
           collapsable: false,
-          children: [["css.md", "Css"]],
+          children: [
+            ["css.md", "Css"],
+            ["keyboard.md", "键盘"],
+            ["batteryCharge.md", "充电"],
+            ["dingding.md", "钉钉官网"],
+          ],
         },
       ],
       "/pages/JavaScript/": [

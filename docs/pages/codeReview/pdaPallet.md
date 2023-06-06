@@ -13,69 +13,70 @@
 
 ### Code
 
-```html
+``` dart
 <!-- enter按钮禁用与启用 -->
 ButtonTheme(
-    height: 50,
-    // ignore: deprecated_member_use
-    child: RaisedButton(
-        color: MyColors.themeColor,
-        disabledColor: MyColors.colorDisabled,
-        child: Text(
-                'Enter'.tr,
-                 style: TextStyle(color: MyColors.whiteColor),
-                ),
-        onPressed: !enableButton ? () => onSubmit() : null),
-        )
+  height: 50,
+  // ignore: deprecated_member_use
+  child: RaisedButton(
+    color: MyColors.themeColor,
+    disabledColor: MyColors.colorDisabled,
+    child: Text(
+      'Enter'.tr,
+      style: TextStyle(color: MyColors.whiteColor),
+    ),
+    onPressed: !enableButton ? () => onSubmit() : null
+  ),
+)
 ```
 
 ```js
 // 输入数量之后enter按钮启用
 keyCompleteQTY() {
-    if (step2NoController.text != '' && QTY.text != '') {
-      setState(() {
-        enableButton = false;
-      });
-    } else {
-      setState(() {
-        enableButton = true;
-      });
-    }
+  if (step2NoController.text != '' && QTY.text != '') {
+    setState(() {
+      enableButton = false;
+    });
+  } else {
+    setState(() {
+      enableButton = true;
+    });
   }
+}
 // 如果sku与已扫描的sku不一致，则弹出提示：是否替换已扫描的sku，若是：则替换，否：则清空sku输入框
 if (res['data']['wydSku'] !=
-    shiftOrderDetailVOList[0]['wydSkuNo']) {
-        showDialog(
-            context: context,
-            builder: (_) {
-                return MyNDialog(
-                  title: 'switch'.tr,
-                  message: 'switch_sku'.tr,
-                  showCancelButton: true,
-                  confirmButtonText: 'shelvingDialog3'.tr,
-                  onConfirm: () {
-                    setState(() {
-                      shiftOrderDetailVOList = [];
-                      list = [];
-                    });
-                  },
-                  onCancel: () {
-                    step2NoController.text = '';
-                  },
-                  showConfirmButton: true,
-                );
-              },
-            );
-          }
+  shiftOrderDetailVOList[0]['wydSkuNo']) {
+    showDialog(
+      context: context,
+      builder: (_) {
+        return MyNDialog(
+          title: 'switch'.tr,
+          message: 'switch_sku'.tr,
+          showCancelButton: true,
+          confirmButtonText: 'shelvingDialog3'.tr,
+          onConfirm: () {
+            setState(() {
+              shiftOrderDetailVOList = [];
+              list = [];
+            });
+          },
+          onCancel: () {
+            step2NoController.text = '';
+          },
+          showConfirmButton: true,
+        );
+      },
+    );
+}
 //  输入数量之后
-    list.forEach((item) {
-        // 如果sku相同则数量累加
-    setState(() {
-        num sum = num.parse(item['number'].toString()) + num.parse(QTY.text);
-        item['number'] = sum.toString();
-        });
-        confirmEnter();
-    });
+list.forEach((item) {
+// 如果sku相同则数量累加
+setState(() {
+  num sum = num.parse(item['number'].toString()) + num.parse(QTY.text);
+  item['number'] = sum.toString();
+  });
+  confirmEnter();
+});
 ```
 
 ### 学习心得

@@ -3,7 +3,7 @@
 #### 伪元素利用案例
 **铅笔示例** 
 
-![异步和单线程](../../assets/css/pencil.png)
+![铅笔](../../assets/css/pencil.png)
 
 ``` html
 <div class="pencil">
@@ -78,7 +78,7 @@ body{
 
 **砂锅示例** 
 
-![异步和单线程](../../assets/css/steamer.png)
+![砂锅](../../assets/css/steamer.png)
 
 ``` html
 <figure class="steamer">
@@ -176,7 +176,7 @@ body{
 
 **飞船示例** 
 
-![异步和单线程](../../assets/css/steamer.png)
+![飞船](../../assets/css/spacecraft.png)
 
 ``` html
 <div class="spacecraft">
