@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue的理解 | 无忧达</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vuepress-starter/favicon.ico">
+    <meta name="description" content="知识库">
+    
+    <link rel="preload" href="/vuepress-starter/assets/css/0.styles.3cbd237b.css" as="style"><link rel="preload" href="/vuepress-starter/assets/js/app.746763ae.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/2.b2f8d863.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/8.5bcfdf16.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/js/10.149efce1.js"><link rel="prefetch" href="/vuepress-starter/assets/js/11.a4392758.js"><link rel="prefetch" href="/vuepress-starter/assets/js/12.6d3396e7.js"><link rel="prefetch" href="/vuepress-starter/assets/js/13.69223043.js"><link rel="prefetch" href="/vuepress-starter/assets/js/14.a3bc1d36.js"><link rel="prefetch" href="/vuepress-starter/assets/js/15.277611cf.js"><link rel="prefetch" href="/vuepress-starter/assets/js/16.438b3af2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/17.62a43830.js"><link rel="prefetch" href="/vuepress-starter/assets/js/18.7ad61fdc.js"><link rel="prefetch" href="/vuepress-starter/assets/js/19.475e8afc.js"><link rel="prefetch" href="/vuepress-starter/assets/js/20.8269f210.js"><link rel="prefetch" href="/vuepress-starter/assets/js/21.1690cee0.js"><link rel="prefetch" href="/vuepress-starter/assets/js/22.784fc9bb.js"><link rel="prefetch" href="/vuepress-starter/assets/js/23.414ba6b0.js"><link rel="prefetch" href="/vuepress-starter/assets/js/24.c6ddd853.js"><link rel="prefetch" href="/vuepress-starter/assets/js/25.2357ba9b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/26.67f79d54.js"><link rel="prefetch" href="/vuepress-starter/assets/js/27.b49ca187.js"><link rel="prefetch" href="/vuepress-starter/assets/js/28.5aaea046.js"><link rel="prefetch" href="/vuepress-starter/assets/js/29.621399b2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/3.11d9e37f.js"><link rel="prefetch" href="/vuepress-starter/assets/js/30.ef5a9da7.js"><link rel="prefetch" href="/vuepress-starter/assets/js/31.94b6c662.js"><link rel="prefetch" href="/vuepress-starter/assets/js/32.dd09db6c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/33.465edda2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/34.0066ec84.js"><link rel="prefetch" href="/vuepress-starter/assets/js/35.0f05dd84.js"><link rel="prefetch" href="/vuepress-starter/assets/js/36.0a0bbe46.js"><link rel="prefetch" href="/vuepress-starter/assets/js/37.60248ed3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/38.37876c18.js"><link rel="prefetch" href="/vuepress-starter/assets/js/39.a8bd56ca.js"><link rel="prefetch" href="/vuepress-starter/assets/js/4.ed65b5b9.js"><link rel="prefetch" href="/vuepress-starter/assets/js/40.2c2a1eba.js"><link rel="prefetch" href="/vuepress-starter/assets/js/41.56c77fe2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/42.b522ebc4.js"><link rel="prefetch" href="/vuepress-starter/assets/js/43.2296f860.js"><link rel="prefetch" href="/vuepress-starter/assets/js/44.d29d868d.js"><link rel="prefetch" href="/vuepress-starter/assets/js/45.0db24ee6.js"><link rel="prefetch" href="/vuepress-starter/assets/js/46.5484c614.js"><link rel="prefetch" href="/vuepress-starter/assets/js/47.fc6698d8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/48.218763be.js"><link rel="prefetch" href="/vuepress-starter/assets/js/49.e959aec6.js"><link rel="prefetch" href="/vuepress-starter/assets/js/5.fca9f0eb.js"><link rel="prefetch" href="/vuepress-starter/assets/js/50.412c4d99.js"><link rel="prefetch" href="/vuepress-starter/assets/js/51.e996d5e3.js"><link rel="prefetch" href="/vuepress-starter/assets/js/52.5730f47e.js"><link rel="prefetch" href="/vuepress-starter/assets/js/53.1522b89d.js"><link rel="prefetch" href="/vuepress-starter/assets/js/54.6aacbe31.js"><link rel="prefetch" href="/vuepress-starter/assets/js/55.697ad180.js"><link rel="prefetch" href="/vuepress-starter/assets/js/56.52b1142b.js"><link rel="prefetch" href="/vuepress-starter/assets/js/57.6d47fb07.js"><link rel="prefetch" href="/vuepress-starter/assets/js/58.ed8ba93c.js"><link rel="prefetch" href="/vuepress-starter/assets/js/59.f392bf49.js"><link rel="prefetch" href="/vuepress-starter/assets/js/6.850d1fc0.js"><link rel="prefetch" href="/vuepress-starter/assets/js/60.535c2976.js"><link rel="prefetch" href="/vuepress-starter/assets/js/61.96642ecf.js"><link rel="prefetch" href="/vuepress-starter/assets/js/62.3803910e.js"><link rel="prefetch" href="/vuepress-starter/assets/js/63.5551ccd5.js"><link rel="prefetch" href="/vuepress-starter/assets/js/64.545f3556.js"><link rel="prefetch" href="/vuepress-starter/assets/js/65.364624bb.js"><link rel="prefetch" href="/vuepress-starter/assets/js/66.5450247f.js"><link rel="prefetch" href="/vuepress-starter/assets/js/67.e26b4923.js"><link rel="prefetch" href="/vuepress-starter/assets/js/68.b29f0c76.js"><link rel="prefetch" href="/vuepress-starter/assets/js/7.a96ddcc6.js"><link rel="prefetch" href="/vuepress-starter/assets/js/9.8390ceb3.js">
+    <link rel="stylesheet" href="/vuepress-starter/assets/css/0.styles.3cbd237b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-starter/" class="home-link router-link-active"><img src="/vuepress-starter/img/blob.png" alt="无忧达" class="logo"> <span class="site-name can-hide">无忧达</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="basic" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow down"></span></button> <button type="button" aria-label="basic" class="mobile-dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/html/html.html" class="nav-link">
+  HTML+Css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/JavaScript/basic.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/TypeScript/BasicType.html" class="nav-link">
+  TypeScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frame" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="frame" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/vue/columnMerge.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/react/React.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/flutter/dart-grammar.html" class="nav-link">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/node/express/express.html" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/node/nest/nest.html" class="nav-link">
+  Nest
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="project" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="project" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/auth/jurisdiction.html" class="nav-link">
+  公司系统
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/wms/wms.html" class="nav-link">
+  WMS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/pda/abnormal.html" class="nav-link">
+  PDA
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/crm/framework.html" class="nav-link">
+  CRM
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/supplier/supplier.html" class="nav-link">
+  供应商考核
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-starter/pages/standard/git.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/vuepress-starter/pages/codeReview/picking.html" class="nav-link">
+  CodeReview
+</a></div><div class="nav-item"><a href="/vuepress-starter/pages/newcomers/newcomers.html" class="nav-link">
+  新人须知
+</a></div><div class="nav-item"><a href="/vuepress-starter/pages/codeing/structure.html" class="nav-link">
+  JavaScript编码规范
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="basic" class="dropdown-title"><span class="title">前端三剑客</span> <span class="arrow down"></span></button> <button type="button" aria-label="basic" class="mobile-dropdown-title"><span class="title">前端三剑客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/html/html.html" class="nav-link">
+  HTML+Css
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/JavaScript/basic.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/TypeScript/BasicType.html" class="nav-link">
+  TypeScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="frame" class="dropdown-title"><span class="title">框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="frame" class="mobile-dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/vue/columnMerge.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/react/React.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/flutter/dart-grammar.html" class="nav-link">
+  Flutter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/node/express/express.html" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/node/nest/nest.html" class="nav-link">
+  Nest
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="project" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="project" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/auth/jurisdiction.html" class="nav-link">
+  公司系统
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/wms/wms.html" class="nav-link">
+  WMS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/pda/abnormal.html" class="nav-link">
+  PDA
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/crm/framework.html" class="nav-link">
+  CRM
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/pages/project/supplier/supplier.html" class="nav-link">
+  供应商考核
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-starter/pages/standard/git.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/vuepress-starter/pages/codeReview/picking.html" class="nav-link">
+  CodeReview
+</a></div><div class="nav-item"><a href="/vuepress-starter/pages/newcomers/newcomers.html" class="nav-link">
+  新人须知
+</a></div><div class="nav-item"><a href="/vuepress-starter/pages/codeing/structure.html" class="nav-link">
+  JavaScript编码规范
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-starter/pages/vue/basic.html" aria-current="page" class="active sidebar-link">Vue的理解</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vuepress-starter/pages/vue/columnMerge.html" class="sidebar-link">el-table表格合并</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="vue的理解"><a href="#vue的理解" class="header-anchor">#</a> Vue的理解</h3> <h4 id="vue的核心特性"><a href="#vue的核心特性" class="header-anchor">#</a> Vue的核心特性</h4> <p><code>MVVM</code>表示的是<code>Model-View-ViewModel</code></p> <ul><li>Model：模型层，负责处理业务逻辑以及和服务器端进行交互</li> <li>View：视图层，负责将数据模型转化为U I展示出来，可以简单的理解为HTML页面</li> <li>ViewModel：视图模型层，用来连接Model和View，是Model和View之间的通信桥梁</li></ul> <p>流程图如下<br> <img src="/vuepress-starter/assets/img/mvm.b7c9242c.png" alt="MVVM"></p> <h4 id="理解viewmodel"><a href="#理解viewmodel" class="header-anchor">#</a> 理解ViewModel</h4> <p>他的主要职责就是</p> <ul><li>数据变化后更新试图</li> <li>视图变化后更新数据
+当然，他还有两个主要部分组成</li> <li>监听器(Observer): 对所有数据的属性进行监听</li> <li>解析器(Compiler): 对每个元素节点的指令进行扫描跟解析，根据指令模版替换数据，以及绑定相应的更新函数</li></ul> <h4 id="实现双向绑定"><a href="#实现双向绑定" class="header-anchor">#</a> 实现双向绑定</h4> <p>以<code>Vue</code>为例，先来看看<code>Vue</code>中的双向绑定流程是什么样的</p> <ol><li><code>new Vue()</code>首先执行初始化，对<code>data</code>执行响应式处理，这个过程发生在<code>Observer</code>中</li> <li>同时对模版执行编译，找到其中动态绑定的数据，从<code>data</code>中获取并初始化视图，这个过程发生在<code>Compiler</code>中</li> <li>同时定义一个更新函数和<code>watcher</code>，将来对应数据变化时<code>Watcher</code>会调用更新函数</li> <li>由于<code>data</code>的某个<code>key</code>在一个视图中可能出现多次，所以每个<code>key</code>都需要一个<code>Dep</code>来管理多个<code>Watcher</code></li> <li>将来data中的数据一旦发生变化，会首先找到对应的<code>Dep</code>，通知所有<code>Watcher</code>执行更新函数</li></ol> <p>流程图如下<br> <img src="/vuepress-starter/assets/img/binding.22af8c85.png" alt="双向绑定"></p> <h4 id="实现"><a href="#实现" class="header-anchor">#</a> 实现</h4> <p>先创建一个构造函数：执行初始化，对<code>data</code>执行响应式处理</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Vue</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$options <span class="token operator">=</span> options<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$data <span class="token operator">=</span> options<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 对data选项做响应式处理</span>
+  <span class="token function">observe</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$data<span class="token punctuation">)</span>
+  <span class="token comment">// 代理data到vm上</span>
+  <span class="token function">proxy</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token comment">// 执行编译</span>
+  <span class="token keyword">new</span> <span class="token class-name">Compile</span><span class="token punctuation">(</span>options<span class="token punctuation">.</span>el<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>对<code>data</code>选型执行响应化具体操作</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">observe</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> obj <span class="token operator">!==</span> <span class="token string">&quot;object&quot;</span> <span class="token operator">||</span> obj <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    retrun<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">new</span> <span class="token class-name">Observe</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Observe</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">walk</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">walk</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+      <span class="token function">defineReactive</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> key<span class="token punctuation">,</span> obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">last updated:</span> <span class="time">2/27/2023, 4:38:38 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/vuepress-starter/pages/vue/columnMerge.html">
+        el-table表格合并
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-starter/assets/js/app.746763ae.js" defer></script><script src="/vuepress-starter/assets/js/2.b2f8d863.js" defer></script><script src="/vuepress-starter/assets/js/8.5bcfdf16.js" defer></script>
+  </body>
+</html>
